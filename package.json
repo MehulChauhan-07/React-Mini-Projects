@@ -1,5 +1,5 @@
 {
-  "name": "react-mini-projects",
+  "name": "React-Mini-Projects",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,13 +11,17 @@
     "dep-graph": "npx depcruise --output-type dot src | dot -T svg -o dependency-graph.svg"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
     "axios": "^1.8.3",
     "commander": "^13.1.0",
     "dependency-cruiser": "^16.10.0",
     "path": "^0.12.7",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.3.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.3.0",
+    "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

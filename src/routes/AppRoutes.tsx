@@ -1,7 +1,7 @@
 // import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "@/pages/Home/HomePage";
+import Home from "@/pages/Home/HomePage_old";
 import CounterApp from "@/pages/Counter_App/CounterPage";
 import TicTacToeApp from "@/pages/TicTacToe/TicTacToePage";
 import TodoApp from "@/pages/TodoApp/TodoPage";
