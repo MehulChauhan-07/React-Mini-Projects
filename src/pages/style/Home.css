@@ -1,0 +1,39 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* background-color: #ffffff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.container h1 {
+  text-align: center;
+  /* color: #333; */
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.container ol {
+  list-style: none;
+  padding: 0;
+  place-items: center;
+}
+
+.container li {
+  margin: 10px 0;
+}
+
+.container a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+
+.container a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}

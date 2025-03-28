@@ -1,0 +1,11 @@
+.TodoItems {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* border-bottom: 1px solid #ccc; */
+  margin-top: 10px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #4e515b;
+}
