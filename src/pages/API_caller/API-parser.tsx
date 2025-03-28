@@ -1,7 +1,7 @@
 import React from "react";
 
-import Fetch from "../../components/API-calls/Fetch";
-import Axios from "../../components/API-calls/Axios";
+import Fetch from "@components/API-calls/Fetch";
+import Axios from "@components/API-calls/Axios";
 
 const API_parser = () => {
   // we can also make toggle button to show and hide the counter component using the state

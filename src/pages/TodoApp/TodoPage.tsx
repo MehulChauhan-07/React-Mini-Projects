@@ -1,5 +1,5 @@
 import React from "react";
-import Todo from "../../components/TodoApp/Todo";
+import Todo from "@components/TodoApp/Todo";
 
 // todo list
 const myTodos = [

@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "../../components/CounterApp/Counter";
+import Counter from "@components/CounterApp/Counter";
 const CounterApp = () => {
   // we can also make toggle button to show and hide the counter component using the state
   const [showCounter, setShowCounter] = React.useState<boolean>(true);

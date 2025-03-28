@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style/Home.css";
+import "@pages/style/Home.css";
 
 interface Project {
   name: string;
@@ -11,7 +11,7 @@ interface HomeProps {
   projects: Project[];
 }
 
-const Home: React.FC<HomeProps> = ({ projects }) => {
+const HomePage: React.FC<HomeProps> = ({ projects }) => {
   return (
     <div className="container">
       <h1>My Projects</h1>
@@ -30,4 +30,4 @@ const Home: React.FC<HomeProps> = ({ projects }) => {
   );
 };
 
-export default Home;
+export default HomePage;

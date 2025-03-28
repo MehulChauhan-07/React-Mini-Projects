@@ -1,23 +1,25 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
-// import App from "./App.tsx";
-// createRoot(document.getElementById("root")!).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>
+// import App from "@/App";
+
+// ReactDOM.createRoot(document.getElementById("root")!).render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </React.StrictMode>
 // );
 
 // Path: src/App.tsx generally we not use that file in this project cuz we have multiple pages so we can directly use the pages in the routes
-import { BrowserRouter as Router } from "react-router-dom";
-import AppRoutes from "./routes/AppRoutes";
+import AppRoutes from "@routes/AppRoutes";
 
-const root = createRoot(document.getElementById("root") as HTMLElement);
-root.render(
-  <StrictMode>
-    <Router>
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <BrowserRouter>
       <AppRoutes />
-    </Router>
-  </StrictMode>
+    </BrowserRouter>
+  </React.StrictMode>
 );

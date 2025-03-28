@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import "../style/TicTacToeApp.css";
-import Block from "../../components/TicTacToe/Block";
+import "@pages/style/TicTacToeApp.css";
+import Block from "@components/TicTacToe/Block";
 
 const TicTacToeApp = () => {
   const [block, setBlock] = useState(Array(9).fill(null));

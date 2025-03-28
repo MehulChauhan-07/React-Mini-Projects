@@ -1,11 +1,11 @@
 // import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "../pages/Home";
-import CounterApp from "../pages/Counter_App/CounterApp";
-import TicTacToeApp from "../pages/TicTacToe/TicTacToeApp";
-import TodoApp from "../pages/Todo_List/TodoList";
-import API_parser from "../pages/API_caller/API-parser";
+import Home from "@/pages/Home/HomePage";
+import CounterApp from "@/pages/Counter_App/CounterPage";
+import TicTacToeApp from "@/pages/TicTacToe/TicTacToePage";
+import TodoApp from "@/pages/TodoApp/TodoPage";
+import API_parser from "@pages/API_caller/API-parser";
 
 const AppRoutes: React.FC = () => {
   const projects = [
