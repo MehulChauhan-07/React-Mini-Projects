@@ -64,10 +64,15 @@
 
 @layer base {
   * {
-    @apply border-border;
+    /* Removed the problematic border-border class */
+    border-color: hsl(var(--border));
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: sans-serif;
+    /* Added a transition for smooth background color change */
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 

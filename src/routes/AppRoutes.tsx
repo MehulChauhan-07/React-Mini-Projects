@@ -4,19 +4,19 @@ import { Route, Routes } from "react-router-dom";
 import Home from "@/pages/Home/HomePage_old";
 import CounterApp from "@/pages/Counter_App/CounterPage";
 import TicTacToeApp from "@/pages/TicTacToe/TicTacToePage";
-import TodoApp from "@/pages/TodoApp/TodoPage";
+import TodoList from "@/pages/TodoApp/TodoPage";
 import API_parser from "@/pages/Api-explorer/Api_parser";
 
 const AppRoutes: React.FC = () => {
   const projects = [
-    { name: "Todo List", path: "/todo-app", component: TodoApp },
-    { name: "Counter App", path: "/counter-app", component: CounterApp },
+    { name: "Todo List", path: "/todo", component: TodoList },
+    { name: "Counter App", path: "/counter", component: CounterApp },
     {
       name: "Tic-Tac-Toe App",
-      path: "/tic-tac-toe-app",
+      path: "/tictactoe",
       component: TicTacToeApp,
     },
-    { name: "API-parser App", path: "/API_parser", component: API_parser },
+    { name: "API-parser App", path: "/api_explorer", component: API_parser },
   ];
   return (
     <Routes>

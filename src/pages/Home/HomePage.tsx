@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaPlus, FaGamepad, FaListUl, FaServer } from "react-icons/fa";
-
+// import "@styles/globals.css";
 const projects = [
   {
     id: "counter",

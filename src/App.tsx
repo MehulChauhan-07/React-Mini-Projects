@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@/components/common/Layout/Layout";
 import Loader from "@components/ui/Loader";
@@ -11,6 +11,7 @@ import TicTacToePage from "@pages/TicTacToe/TicTacToePage";
 import Api_parser from "@/pages/Api-explorer/Api_parser";
 
 import NotFoundPage from "@pages/NotFound/NotFoundPage";
+import { Suspense } from "react";
 
 function App() {
   console.log("App component rendered");
@@ -18,7 +19,6 @@ function App() {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {" "}
           {/* Added Layout route */}
           <Route index element={<HomePage />} />
           <Route path="counter" element={<CounterPage />} />
