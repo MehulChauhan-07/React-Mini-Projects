@@ -32,7 +32,7 @@ const projects = [
     title: "API Explorer",
     description: "Application demonstrating data fetching from external APIs.",
     icon: <FaServer className="text-orange-500" size={24} />,
-    link: "/api-explorer",
+    link: "/api_explorer",
     technologies: ["React", "TypeScript", "Axios", "React Query"],
   },
 ];

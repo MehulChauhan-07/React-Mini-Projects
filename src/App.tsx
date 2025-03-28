@@ -1,15 +1,16 @@
 import { Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "@components/Layout/Layout";
+import Layout from "@/components/common/Layout/Layout";
 import Loader from "@components/ui/Loader";
 
 // Lazy load pages for better performance
-import HomePage from "@/pages/Home/HomePage";
+import HomePage from "@/pages/Home/Homepage";
 import CounterPage from "@pages/Counter_App/CounterPage";
 import TodoPage from "@pages/TodoApp/TodoPage";
 import TicTacToePage from "@pages/TicTacToe/TicTacToePage";
+import Api_parser from "@/pages/Api-explorer/Api_parser";
 
-// const NotFoundPage = lazy(() => import("@pages/NotFound/NotFoundPage"));
+import NotFoundPage from "@pages/NotFound/NotFoundPage";
 
 function App() {
   console.log("App component rendered");
@@ -23,7 +24,8 @@ function App() {
           <Route path="counter" element={<CounterPage />} />
           <Route path="todo" element={<TodoPage />} />
           <Route path="tictactoe" element={<TicTacToePage />} />
-          {/* <Route path="404" element={<NotFoundPage />} /> */}
+          <Route path="api_explorer" element={<Api_parser />} />
+          <Route path="404" element={<NotFoundPage />} />
           <Route path="*" element={<Navigate replace to="404" />} />
         </Route>
       </Routes>

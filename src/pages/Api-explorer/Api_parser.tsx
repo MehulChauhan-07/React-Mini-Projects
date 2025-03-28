@@ -3,7 +3,7 @@ import React from "react";
 import Fetch from "@components/API-calls/Fetch";
 import Axios from "@components/API-calls/Axios";
 
-const API_parser = () => {
+const Api_parser = () => {
   // we can also make toggle button to show and hide the counter component using the state
   const [showFetch, setShowFetch] = React.useState<boolean>(false);
   const [showAxios, setShowAxios] = React.useState<boolean>(false);
@@ -24,4 +24,4 @@ const API_parser = () => {
   );
 };
 
-export default API_parser;
+export default Api_parser;

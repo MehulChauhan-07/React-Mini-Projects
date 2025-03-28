@@ -5,7 +5,7 @@ import Home from "@/pages/Home/HomePage_old";
 import CounterApp from "@/pages/Counter_App/CounterPage";
 import TicTacToeApp from "@/pages/TicTacToe/TicTacToePage";
 import TodoApp from "@/pages/TodoApp/TodoPage";
-import API_parser from "@pages/API_caller/API-parser";
+import API_parser from "@/pages/Api-explorer/Api_parser";
 
 const AppRoutes: React.FC = () => {
   const projects = [

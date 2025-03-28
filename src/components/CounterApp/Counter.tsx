@@ -31,25 +31,42 @@ const Counter: React.FC = () => {
     setCounter(Counter - 1);
   };
   return (
-    <div className="counter-container">
-      <div className="content">
-        <p> {Counter}</p>
+    <div className="flex flex-col items-center justify-center bg-gray-800 dark:bg-gray-900 text-white p-6 rounded-lg shadow-md">
+      <div className="flex flex-col items-center">
+        <p className="text-4xl font-bold mb-4">{Counter}</p>
         <button
-          // onClick={() => setCounter(Counter + 1)}
           onClick={handleIncrement}
-          style={{ background: "#558e55" }}
+          className="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-lg mt-2 border-3 border-transparent hover:border-white transition-colors duration-300"
         >
           Increase
         </button>
         <button
-          // onClick={() => setCounter(Counter - 1)}
           onClick={handleDecrement}
-          style={{ background: "#c56756" }}
+          className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-lg mt-2 border-3 border-transparent hover:border-white transition-colors duration-300"
         >
           decrease
         </button>
       </div>
     </div>
+    // <div className="counter-container">
+    //   <div className="content">
+    //     <p> {Counter}</p>
+    //     <button
+    //       // onClick={() => setCounter(Counter + 1)}
+    //       onClick={handleIncrement}
+    //       style={{ background: "#558e55" }}
+    //     >
+    //       Increase
+    //     </button>
+    //     <button
+    //       // onClick={() => setCounter(Counter - 1)}
+    //       onClick={handleDecrement}
+    //       style={{ background: "#c56756" }}
+    //     >
+    //       decrease
+    //     </button>
+    //   </div>
+    // </div>
   );
 };
 
